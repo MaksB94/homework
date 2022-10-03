@@ -1,0 +1,77 @@
+	*{
+		box-sizing: border-box;
+	}
+		.main{
+	width: 1200px;
+	margin: 20px auto;
+	}
+	.block_1 *{
+    border: 1px solid red;
+  }
+	.block_1{
+      display: grid;
+      grid-template-areas: 
+      "A B C"
+      "D D F"
+      "D D G"
+      "E E G"
+      "E E H"
+      "I J J"
+      "I K L"
+      "M M P"
+      "N O P"
+      "N O P";
+
+  }
+  .A{
+     grid-area: A;
+  }
+  .B{
+    grid-area: B;
+  }
+  .C{
+    grid-area: C;
+  }
+  .D{
+  	grid-area:D;
+  }
+  .F{
+  	grid-area:F;
+  }
+  .G{
+  	grid-area:G;
+  }
+  .E{
+  	grid-area:E;
+  }
+  .H{
+  	grid-area:H;
+  }
+  .I{
+  	grid-area:I;
+  }
+  .J{
+  	grid-area:J;
+  }
+  .K{
+  	grid-area:K;
+  }
+  .L{
+  	grid-area:L;
+  }
+  .M{
+  	grid-area:M
+  	;
+  }
+  .N{
+  	grid-area:N
+  	;
+  }
+  .O{
+  	grid-area:O
+  	;
+  }
+  .P{
+  	grid-area:P
+  	;
+  }
