@@ -21,6 +21,7 @@
 	text-decoration: none;
 	color: black;
 	text-transform: uppercase;
+	display: block;
 	padding: 10px 30px;	
 }
 .nav ul ul{
