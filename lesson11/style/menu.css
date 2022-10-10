@@ -1,0 +1,56 @@
+.nav ul{
+	list-style: none;
+	text-align: center;
+	font-size: 0;
+	display: block;
+}
+.nav ul li{
+	text-align: center;
+	display: inline-block;
+	font-size: 36px;
+	background: skyblue;
+	position: relative;
+}
+.nav li+li{
+	border-left: 2px solid black;
+}
+.nav ul li:hover{
+	background: blue;
+}
+.nav ul li a{
+	text-decoration: none;
+	color: black;
+	text-transform: uppercase;
+	padding: 10px 30px;	
+}
+.nav ul ul{
+	position: absolute;
+	display: none;
+	padding: 0;
+	width: 100%;
+}
+.nav ul li:hover > ul{
+	display: block;
+}
+.nav ul ul li{
+	border: none;
+	display: block;
+	font-size: 28px;
+	z-index: 5;
+}
+.nav ul ul li a{
+	padding: 10px 0;
+}
+.nav ul ul ul.drop-left{
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+.nav ul li ul li:hover ul{
+	display: block;
+}
+.nav ul ul ul.drop-right{
+	position: absolute;
+	bottom: 0;
+	right: 100%;
+}
