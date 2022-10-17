@@ -13,11 +13,11 @@ margin: 10px;
     display: block;
 }
 .media li .facebook{
-    background: url(../imager/facebook.png);
+    background: url('../imager/css_sprites.png');
 }
 .media li .instagram{
-    background: url(../imager/instagram.png);
+    background: url('../imager/css_sprites.png') -50px;
 }
 .media li .telegram{
-    background: url(../imager/telegram.png);
+    background: url('../imager/css_sprites.png') -100px;
 }
