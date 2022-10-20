@@ -2,7 +2,8 @@
 	list-style: none;
 	text-align: center;
 	font-size: 0;
-	display: block;
+	display: flex;
+	justify-content: center;
 }
 .nav ul li{
 	text-align: center;
@@ -74,77 +75,16 @@ margin-right: 8px;
 .nav>ul li:last-child a:after{
 	content: "";
 	width: 50px;
-	 height: 50px;
+	height: 50px;
+	vertical-align: middle;
 	background: url(../imager/css_sprites.png);
 	background-position: -10px -10px;
 	display: inline-block;
+	margin-left: 8px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.bg-bottom {
-    width: 50px; height: 50px;
-    background: url('css_sprites.png') -10px -10px;
+.nav>ul li:last-child:hover a:after{
+	background-position: -570px -10px;
 }
-
-x
-.bg-facebook {
-    width: 50px; height: 50px;
-    background: url('css_sprites.png') -80px -10px;
-}
-
-x
-.bg-gallery {
-    width: 50px; height: 50px;
-    background: url('css_sprites.png') -150px -10px;
-}
-
-x
-.bg-home {
-    width: 50px; height: 49px;
-    background: url('css_sprites.png') -220px -10px;
-}
-
-x
-.bg-instagram {
-    width: 50px; height: 50px;
-    background: url('css_sprites.png') -290px -10px;
-}
-
-x
-.bg-left {
-    width: 50px; height: 50px;
-    background: url('css_sprites.png') -360px -10px;
-}
-
-x
-.bg-right {
-    width: 50px; height: 50px;
-    background: url('css_sprites.png') -430px -10px;
-}
-
-x
-.bg-telegram {
-    width: 50px; height: 50px;
-    background: url('css_sprites.png') -500px -10px;
-}
-
-x
-.bg-top {
-    width: 50px; height: 50px;
-    background: url('css_sprites.png') -570px -10px;
+.nav ul li ul li a:after{
+	display: none;
 }
