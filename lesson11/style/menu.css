@@ -31,9 +31,10 @@
 	opacity: 0;
 	padding: 0;
 	width: 100%;
+	display: block;
 }
 .nav ul li:hover > ul{
-	transition: visibility 0s, opacity 1s ease;
+	transition: opacity 1s ease;
 	visibility: visible;
 	opacity: 1;
 }
