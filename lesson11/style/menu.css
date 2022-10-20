@@ -34,9 +34,16 @@
 	display: block;
 }
 .nav ul li:hover > ul{
-	transition: opacity 1s ease;
+	transition: opacity 1s,  ease;
 	visibility: visible;
 	opacity: 1;
+}
+.nav > ul > li:nth-child(3) > ul{
+	bottom: -600%;
+}
+.nav > ul > li:nth-child(3):hover > ul{
+	bottom: -284px;
+	transition:bottom .6s ease;
 }
 .nav ul li> ul li{
 	display: block;
@@ -131,4 +138,9 @@ margin-right: 8px;
 .nav>ul li:last-child ul li:last-child ul li a:before,
 .nav>ul li:last-child ul li:nth-child(3) ul li a:before{
 	display: none;
+}
+.nav>ul li:first-child:hover a:before,
+.nav>ul li:nth-child(2):hover a:before{
+	transform: scale(1.2);
+	transition: transform .4s;
 }
