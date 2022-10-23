@@ -1,0 +1,55 @@
+.media{
+    width: 200px;
+    height: 200px;
+ background: blue;
+position: fixed;
+display: inline-block;
+top: 50%;
+margin-top: -100px;
+right: -180px;
+}
+.media:hover{
+    right: 0;
+    transition: right 1s ease;
+}
+.media1{
+    width: 20px;
+    height: 200px;
+    display: inline-block;
+    writing-mode: vertical-lr;
+    text-align: center;
+   background: lime;
+}
+.media2{
+    display: inline-block;
+
+}
+.media2 li{
+    font-size: 20px;
+}
+.media2 li a{
+margin: 10px;
+    height: 50px;
+    width: 50px;
+    display: block;
+    border: 1px solid white;
+    transform: rotate(45deg);
+    overflow: hidden;
+}
+.media2 li a:before{
+content: "";
+width: 50px;
+height: 50px;
+display: inline-block;
+background: url('../imager/css_sprites.png');
+transform: rotate(-45deg) scale(1.38);
+}
+.media2 li .facebook:before{
+    background-position: -80px -10px;
+}
+.media2 li .instagram:before{
+    background-position: -290px -10px;
+}
+.media2 li .telegram:before{
+    background-position: -500px -10px;
+}

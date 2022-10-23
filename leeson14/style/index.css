@@ -1,0 +1,40 @@
+h1{
+    color: aqua;
+}
+.basic{
+    width: 1400px; margin: 0 auto 
+}
+.introduction{
+    border: 5px solid lime;
+}
+.year{
+    background: aqua;
+}
+h2{
+    color: darkslategray;
+    background: dodgerblue;
+}
+h3{
+    color: maroon;
+}
+#history{
+    border: solid green 5px;
+}
+.locationText{
+    text-align: center;
+}
+.title{
+    color: red;
+}
+ul{
+    position: static;
+    display: flex;
+    font-size: 35px;
+    display: block;
+}
+.menu p{
+    margin: 32px 0;
+ }
+ .locationText{
+    margin: 26px 0;
+ }

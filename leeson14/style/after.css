@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+width: 1200px;
+margin: 20px auto; 
+}
+.block_1_2{
+    width: 400px;
+    float: left;
+    border: 1px solid red;
+}
+.block_2_1{
+    width: 800px;
+    float: left;
+}
+.block_2_1_1{
+    border: 1px solid red;
+}
+.block_2_2{
+    width: 400px;
+    float: left;
+}
+.block_2_2_1,
+.block_2_2_2,
+.block_2_2_3{
+    border: 1px solid red;
+}
+
+.block_3_1{
+    width: 400px;
+    float: left;
+}
+.block_3_1_1{
+    border: 1px solid red;
+}
+.block_3_2{
+    width: 800px;
+    float: left;
+}
+.block_3_2_1{
+    border: 1px solid red;
+}
+.block_3_2_2,
+.block_3_2_3{
+    width: 400px;
+    border: 1px solid red;
+    float: left;
+}
+.block_4_1{
+    width: 800px;
+    float: left;
+}
+.block_4_1_0{
+    border: 1px solid red;
+}
+.block_4_1_1{
+    width: 400px;
+    float: left;
+}
+.block_4_1_1_1{
+    border: 1px solid red;
+}
+.block_4_1_2{
+    width: 400px;
+    border: 1px solid red;
+    float: left;
+}
+.block_4_2{
+    width: 400px;
+    float: left;
+
+}
+.block_4_2_1{
+    border: 1px solid red;
+
+}
+.clearfix:after{
+    content: "";
+    clear: left;
+    display: block;
+}
