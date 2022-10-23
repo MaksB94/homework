@@ -1,5 +1,5 @@
 .media{
-    width: 200px;
+    width: 210px;
     height: 200px;
  background: blue;
 position: fixed;
@@ -13,19 +13,33 @@ right: -180px;
     transition: right 1s ease;
 }
 .media1{
-    width: 20px;
+    width: 30px;
     height: 200px;
     display: inline-block;
     writing-mode: vertical-lr;
     text-align: center;
    background: lime;
+   transform: rotate(180deg);
+   font-size: 24px;
+   text-transform: uppercase;
 }
 .media2{
     display: inline-block;
-
+}
+.media2 ul{
+position: absolute;
+transform: rotate(45deg) translate(-2%,-27%);
+top: 50%;
 }
 .media2 li{
-    font-size: 20px;
+transform: rotate(-45deg);
+display: inline-block;
+margin-top: -16px;
+margin-left: -18px;
+}
+.media2 li a:hover:before{
+    transform: rotate(-45deg) scale(1.80);
+    transition: transform .3s ease;
 }
 .media2 li a{
 margin: 10px;
@@ -53,3 +67,11 @@ transform: rotate(-45deg) scale(1.38);
 .media2 li .telegram:before{
     background-position: -500px -10px;
 }
+  .media1 span{
+    position: relative;
+    animation: slideText 1s infinite linear;
+   }
+   @keyframes slideText {
+    0% {left: 0;}
+    100%{left: 4px;}
+  }
