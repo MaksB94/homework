@@ -11,6 +11,9 @@
 	font-size: 36px;
 	background: skyblue;
 	position: relative;
+	height: 70px;
+	padding: 0 40px;
+
 }
 .nav li+li{
 	border-left: 2px solid black;
@@ -32,6 +35,7 @@
 	padding: 0;
 	width: 100%;
 	display: block;
+	left: 0;
 }
 .nav ul li:hover > ul{
 	transition: opacity 1s,  ease;
@@ -42,7 +46,7 @@
 	bottom: -600%;
 }
 .nav > ul > li:nth-child(3):hover > ul{
-	bottom: -284px;
+	bottom: -350px;
 	transition:bottom .6s ease;
 }
 .nav ul li> ul li{
@@ -61,15 +65,24 @@
 .nav ul ul ul.drop-left{
 	position: absolute;
 	top: 0;
-	left: 100%;
+	left: 0;
+	opacity: 0;
 }
-.nav ul li ul li:hover ul{
-	display: block;
+.nav ul li ul li:hover ul.drop-left{
+	transition: left .25s ease-in, opacity .5s ease-in;
+	left: 100%;
+	opacity: 1;
 }
 .nav ul ul ul.drop-right{
 	position: absolute;
 	bottom: 0;
-	right: 100%;
+	left: 0;
+	opacity: 0;
+}
+.nav ul li ul li:hover ul.drop-right{
+	transition: left .25s ease-in, opacity .5s ease-in;
+	left: -282px;
+	opacity: 1;
 }
 .nav>ul li a:before{
 	content:"";
@@ -77,8 +90,8 @@
 	height: 50px;
 	background: url(../imager/css_sprites.png);
 	display: inline-block;
-vertical-align: middle;
-margin-right: 8px;
+	position: absolute;
+	left: 10px;
 }
 .nav>ul li:first-child a:before{
 	background-position: -220px -10px;
@@ -86,28 +99,22 @@ margin-right: 8px;
 .nav>ul li:nth-child(2) a:before{
 	background-position: -150px -10px;
 }
-.nav>ul li:last-child a:before{display: none;}
-.nav>ul li:last-child a:after{
-	content: "";
-	width: 50px;
-	height: 50px;
-	vertical-align: middle;
-	background: url(../imager/css_sprites.png);
+.nav>ul li:last-child a:before{
 	background-position: -10px -10px;
-	display: inline-block;
-	margin-left: 8px;
-
+	left: initial;
+	right: 10px;
 }
-.nav>ul li:last-child:hover a:after{
+.nav>ul li:last-child:hover a::before{
 	background-position: -570px -10px;
+	
 }
-.nav ul li ul li a:after{
+.nav ul li ul li a:before{
 	display: none;
 }
-.nav>ul li:last-child ul a:after{
+.nav>ul li:last-child ul a:before{
     display: none;
 }
-.nav>ul li:last-child ul li:nth-child(3) a:after{
+.nav>ul li:last-child ul li:nth-child(3) a:before{
 	content: "";
 	width: 50px;
 	height: 50px;
@@ -115,13 +122,10 @@ margin-right: 8px;
 	background: url(../imager/css_sprites.png);
 	background-position: -430px -10px;
 	display: inline-block;
-	margin-left: 8px;
+	position: absolute;
 }
-.nav>ul li:last-child ul li:nth-child(3):hover a:after{
+.nav>ul li:last-child ul li:nth-child(3):hover a:before{
 	background-position: -360px -10px;
-}
-.nav>ul li:last-child ul li:nth-child(3) ul li a:after{
-	display: none;
 }
 .nav>ul li:last-child ul li:last-child a:before{
 	content: "";
@@ -131,7 +135,8 @@ margin-right: 8px;
 	background: url(../imager/css_sprites.png);
 	background-position: -360px -10px;
 	display: inline-block;
-	margin-right: 8px;
+	position: absolute;
+	left: 20px;
 }
 .nav>ul li:last-child ul li:last-child:hover a::before{
 	background-position: -430px -10px;
