@@ -1,0 +1,265 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>APPLE</title>
+	<style>
+	.screw{
+		width: 100px;
+		height: 170px;
+		background: red;
+		position: relative;
+		margin: 0 auto;
+	}
+	.screw:before,
+	.screw:after{
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: red;
+	}
+	.screw:before{
+		transform: rotate(-60deg);
+	}
+	.screw:after{
+		transform: rotate(60deg);
+	}
+	.screw-hole{
+		height: 60px;
+		width: 60px;
+		background: #FFF;
+		position: absolute;
+		border: 2px solid #000;
+		top: 50%;
+		left: 50%;
+		border-radius: 50%;
+		z-index: 5;
+		transform: translate(-50%, -50%);
+		border-top-width: 4px;
+    	border-left-width: 8px;
+	}
+	.bolt{
+		position: relative;
+		width: 300px;
+	}
+	.bolt-head{
+		height: 200px; 
+		width: 100px;
+		background: aqua;
+		border-radius: 70px 0 0 70px;
+
+	}
+	.bolt-head:before{
+		content: "";
+		height: 20px;
+		width: 40px;
+		background: white;
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+	.bolt-body{
+	position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		height: 100px;
+		width:200px;
+		background: aqua;
+		right:0;
+		border-radius: 0 12px 12px 0;
+			}
+	.bolt-body:after{
+		position: absolute;
+		content: "";
+		height: 100%;
+		width: 70%;
+		background: repeating-linear-gradient(
+  60deg,
+  aqua,
+  aqua 10px,
+  #000 10px,
+  #000 25px);
+		right: 0;
+		border-radius: 0 12px 12px 0;
+	}
+	.key{
+		position: relative;
+		margin-top: 50px;
+		height: 750px;
+		width: 350px;
+	}
+	.key-head{
+		width: 250px;
+		height: 250px;
+		background: orange;
+		border-radius: 50%;
+		position: absolute;
+	}
+	.key-head:after{
+		content: "";
+		width: 150px;
+		height: 180px;
+		background: white;
+		position: absolute;
+		transform: rotate(-45deg);
+		border-radius: 0  0 30px 30px;
+		left: 6%;
+	}
+	.key-body{
+		height: 500px;
+		width: 100px;
+		background: orange;
+		position: absolute;
+		transform: rotate(-45deg);	
+		top: 104px;
+    	left: 309px;
+    	border-radius: 0  0 30px 30px;
+	}
+	.key-body:after{
+		content: "";
+		width: 40px;
+		height: 40px;
+		border-radius:50%;
+		background: white;
+		position: absolute;
+		top: 90%;
+		left: 50%;
+		transform: translate(-50%, -90%);
+	}
+	.ship{
+		position: relative;
+		width: 800px;
+		height: 800px;
+		margin: 0 auto;
+		margin-top: 650px; 
+	}
+	.nose{
+		width: 0;
+      height: 0;
+      border-top: 120px solid transparent;
+      border-right: 120px solid blue;
+      border-bottom: 120px solid transparent;
+      position: absolute;
+      top: -90px;
+      left: -120px;
+	}
+	.deck{
+		width: 700px;
+		height: 150px;
+		background: blue;
+		display:flex;
+		justify-content: space-around;
+    	align-items: center;
+
+
+	}
+	.stern{
+		width: 150px;
+		height: 300px;
+		background: blue;
+		position: absolute;
+		transform: rotate(45deg);
+		top: -159px;
+    	right: -28px;
+}
+		.mast{
+			height: 500px;
+			width: 20px;
+			background: blue;
+			position: absolute;
+			top: -500px;
+    		left: 340px;
+		}
+		.sail{
+		height: 480px; 
+		width: 300px;
+		background: blue;
+		border-radius: 300px 0 0 300px;
+		position: absolute;
+		top: -500px;
+    	left:40px;
+		}
+		.sail:after{
+			content: "";
+			height: 476px;
+			width:30px;
+			margin-top:2px; 
+			background: white;
+			right: 0;
+    		position: absolute;
+    		border-radius:40px 0 0 40px;
+		}
+		.sail-2{
+			width: 0;
+      		height: 0;
+      		border-top: 200px solid transparent;
+      		border-left: 300px solid blue;
+      		border-bottom: 200px solid transparent;
+      		position: absolute;
+      		top: -400px;
+    		left: 360px;
+		}
+		.sail-2:after{
+			content: "";
+			width: 0;
+      		height: 0;
+      		border-top: 196px solid transparent;
+      		border-left: 30px solid white;
+      		border-bottom: 196px solid transparent;
+			margin-top: 3px;
+			right: 0;
+    		position: absolute;
+    		top: -199px;
+    		left: -300px;
+    		}
+    	.flag{
+    		
+			border: 50px solid blue;
+    		border-left: 0;
+    		border-right: 30px solid transparent;
+    		width: 100px;
+    		position: absolute;
+    		top: -500px;
+    		left: 360px;
+    	}
+    	.decor{
+    		width: 50px;
+    		height: 50px;
+    		background: red;
+    		border-radius: 50%; 
+    		z-index: 5;	
+    	}
+
+
+
+	</style>
+</head>
+<body>	
+	<div class="screw"><div class="screw-hole"></div></div>
+	<div class="bolt">
+	<div class="bolt-head"></div>
+	<div class="bolt-body"></div>
+	</div>
+	<div class="key">
+		<div class="key-head"></div>
+		<div class="key-body"></div>
+	</div>
+		<div class="ship">
+			<div class="nose"></div>
+			<div class="deck">
+				<div class="decor"></div>
+				<div class="decor"></div>
+				<div class="decor"></div>
+				<div class="decor"></div>
+			</div>
+			<div class="stern"></div>
+			<div class="mast"></div>
+			<div class="sail"></div>	
+			<div class="sail-2"></div>
+			<div class="flag"></div>
+		</div>
+		
+	
+</body>
+</html>
