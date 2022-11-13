@@ -17,7 +17,6 @@
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background: white;
 	}
 	.screw:before{
 		left: 100%;
@@ -38,29 +37,37 @@ border-bottom: 88px solid transparent;
 	.bolt{
 		position: relative;
 		width: 300px;
+		margin-bottom: 200px;
+		margin-top: 60px;
 	}
-	.bolt-head{
-		height: 200px; 
-		width: 100px;
-		background: aqua;
-		border-radius: 70px 0 0 70px;
-
-	}
-	.bolt-head:before{
+	.bolt:before {
 		content: "";
-		height: 20px;
-		width: 40px;
-		background: white;
+		height: 90px;
+		width: 90px;
+		background: aqua;
+		display: block;
 		position: absolute;
-		top: 50%;
-		transform: translate(0, -50%);
+		top: -95px;
+		left: 10px;
+		border-top-left-radius: 80%;
+	}
+	.bolt:after {
+		content: "";
+		height: 90px;
+		width: 90px;
+		background: aqua;
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 10px;
+		border-bottom-left-radius: 80%;
 	}
 	.bolt-body{
 	position: absolute;
 		top: 50%;
 		transform: translate(0, -50%);
 		height: 100px;
-		width:200px;
+		width:260px;
 		background: aqua;
 		right:0;
 		border-radius: 0 12px 12px 0;
@@ -88,40 +95,21 @@ border-bottom: 88px solid transparent;
 	.key-head{
 		width: 250px;
 		height: 250px;
-		background: orange;
 		border-radius: 50%;
 		position: absolute;
-	}
-	.key-head:after{
-		content: "";
-		width: 150px;
-		height: 180px;
-		background: white;
-		position: absolute;
+		background: radial-gradient(ellipse 30% 58% at 50% 15%, transparent 80px, orange);
 		transform: rotate(-45deg);
-		border-radius: 0  0 30px 30px;
-		left: 6%;
 	}
+
 	.key-body{
 		height: 500px;
 		width: 100px;
-		background: orange;
+		background: radial-gradient(circle at 50% 90%, transparent 20px, orange 1%);
 		position: absolute;
 		transform: rotate(-45deg);	
 		top: 104px;
     	left: 309px;
     	border-radius: 0  0 30px 30px;
-	}
-	.key-body:after{
-		content: "";
-		width: 40px;
-		height: 40px;
-		border-radius:50%;
-		background: white;
-		position: absolute;
-		top: 90%;
-		left: 50%;
-		transform: translate(-50%, -90%);
 	}
 	.ship{
 		position: relative;
@@ -170,47 +158,23 @@ border-bottom: 88px solid transparent;
 		.sail{
 		height: 480px; 
 		width: 300px;
-		background: blue;
+		background: radial-gradient(ellipse 8% 58% at 99% 50%, transparent 20px, blue 1%);
 		border-radius: 300px 0 0 300px;
 		position: absolute;
 		top: -500px;
     	left:40px;
 		}
-		.sail:after{
-			content: "";
-			height: 476px;
-			width:30px;
-			margin-top:2px; 
-			background: white;
-			right: 0;
-    		position: absolute;
-    		border-radius:40px 0 0 40px;
-		}
 		.sail-2{
 			width: 0;
-      		height: 0;
-      		border-top: 200px solid transparent;
-      		border-left: 300px solid blue;
-      		border-bottom: 200px solid transparent;
-      		position: absolute;
-      		top: -400px;
-    		left: 360px;
+			height: 0;
+			border-top: 205px solid transparent;
+			border-left: 300px solid blue;
+			border-bottom: 205px solid transparent;
+			position: absolute;
+			top: -405px;
+			left: 366px;
 		}
-		.sail-2:after{
-			content: "";
-			width: 0;
-      		height: 0;
-      		border-top: 196px solid transparent;
-      		border-left: 30px solid white;
-      		border-bottom: 196px solid transparent;
-			margin-top: 3px;
-			right: 0;
-    		position: absolute;
-    		top: -199px;
-    		left: -300px;
-    		}
     	.flag{
-    		
 			border: 50px solid blue;
     		border-left: 0;
     		border-right: 30px solid transparent;
@@ -226,16 +190,12 @@ border-bottom: 88px solid transparent;
     		border-radius: 50%; 
     		z-index: 5;	
     	}
-
-
-
 	</style>
 </head>
 <body>	
 	<div class="screw"><div class="screw-hole"></div></div>
 	</div>
 	<div class="bolt">
-	<div class="bolt-head"></div>
 	<div class="bolt-body"></div>
 	</div>
 	<div class="key">
