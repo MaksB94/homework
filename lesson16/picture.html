@@ -7,9 +7,9 @@
 	.screw{
 		width: 100px;
 		height: 170px;
-		background: red;
 		position: relative;
 		margin: 0 auto;
+		background: radial-gradient(circle, transparent 40px, rgb(255, 0, 0) 5%);
 	}
 	.screw:before,
 	.screw:after{
@@ -17,27 +17,23 @@
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		background: red;
+		background: white;
 	}
 	.screw:before{
-		transform: rotate(-60deg);
+		left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 82px solid transparent;
+    border-left: 65px solid red;
+    border-bottom: 88px solid transparent;
 	}
 	.screw:after{
-		transform: rotate(60deg);
-	}
-	.screw-hole{
-		height: 60px;
-		width: 60px;
-		background: #FFF;
-		position: absolute;
-		border: 2px solid #000;
-		top: 50%;
-		left: 50%;
-		border-radius: 50%;
-		z-index: 5;
-		transform: translate(-50%, -50%);
-		border-top-width: 4px;
-    	border-left-width: 8px;
+		right: 100%;
+		width: 0; 
+height: 0;
+border-top: 82px solid transparent;
+border-right: 65px solid red;
+border-bottom: 88px solid transparent;
 	}
 	.bolt{
 		position: relative;
@@ -237,6 +233,7 @@
 </head>
 <body>	
 	<div class="screw"><div class="screw-hole"></div></div>
+	</div>
 	<div class="bolt">
 	<div class="bolt-head"></div>
 	<div class="bolt-body"></div>
