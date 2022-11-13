@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>AUTO</title>
+	<style>
+	select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+    appearance: none;
+}
+select:-ms-expand {
+  display: none;
+}
+.option-auto select{
+	padding: 5px 15px;
+	border: 1px solid red;
+	margin-bottom: 100px;
+}
+.option-auto{
+	position: relative;
+	display: inline-block;
+}
+.option-auto:after{
+	content: "↓";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	color: red;
+	font-size: 24px;
+    right: 5px;
+    top: -2px;
+    pointer-events: none;
+}
+.number{
+	position: relative;
+	display: inline-block;
+}
+input{
+padding: 10px 15px;
+}
+.number:before,
+.number:after{
+	position: absolute;
+	width: 10px;
+	right: 10px;
+	color: blue;
+	pointer-events: none;
+}
+.number:before{
+	content: "+";
+    top: 6px;
+    right: 19px;
+}
+.number:after{
+	content: "-";
+    top: 14px;
+    right: 17px;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 0;
+}
+input::placeholder{
+  color: red;
+  font-size: 16px;
+  opacity: .5;
+}
+	.checkbox-container{
+		position: relative;
+	}
+	.checkbox-container input{
+		height: 55px;
+	    width: 110px;
+	    left: 0;
+	    z-index: 5;
+	    position: absolute;
+	    opacity: 0;
+	}
+	.checkbox-container label{
+		display: block;
+	    width: 110px;
+	    height: 55px;
+	    background-color: aqua;
+        border-radius: 55px;
+	    cursor: pointer;
+	    transition: background 0.3s ease;
+	}
+	.checkbox-container label:before{
+		content: '';
+	    width: 50px;
+	    height: 50px;
+	    position: relative;
+	    border-radius: 50%;
+	    background: #b3b2b2;
+	    display: block;
+	    top: 2px;
+	    left: 4px;
+	    transition: left .3s ease;
+
+	}
+	.checkbox-container input:checked + label:before{
+		left: 55px;
+
+	}
+	.checkbox-container input:checked + label{
+		background: orange;
+	}
+
+	</style>
+</head>
+<body>	
+	<div>
+		<form action="#">
+		<p class="option-auto">
+		<select name="auto">
+			<option value="MERCEDES">MERCEDES</option>
+			<option value="BMW">BMW</option>
+			<option value="AUDI">AUDI</option>
+			<option value="PORSCHE">PORSCHE</option>
+			<option value="TESLA">TESLA</option>
+		</select>
+		</p>
+		</form>
+		<p class="number">
+			<input type="number">
+		</p>
+		<p>
+			<input placeholder="placeholder" type="text">
+		</p>
+		<div class="checkbox-container">
+    		<input type="checkbox">
+    		<label for=""></label>
+		</div>
+	</div>
+</body>
+</html>
