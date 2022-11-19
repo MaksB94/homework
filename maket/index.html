@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<meta charset="utf-8">
+	<title>APPLE</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Nunito:wght@400;600;700&family=Open+Sans&display=swap');
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			font-family: 'Nunito', sans-serif;
+			/*font-family: 'Kaushan Script', cursive;
+			font-family: 'Open Sans', sans-serif;*/
+			font-size: 14px;
+			font-weight: 400;
+			color: #0b0806;
+			line-height: 1.65;
+			min-width: 320px;
+			overflow-x: hidden; 
+		}
+		.container{
+			max-width: 1110px;
+			margin: 0 auto;
+		}
+		.btn{
+			text-decoration: none;
+			color: inherit;
+			display: inline-block;
+			padding: 5px 35px;
+			height: 40px;
+		}
+		.btn.btn-secondare{
+			
+			border: 2px solid #000000;
+			color: #081013;
+		
+		}
+		.btn.btn-first{
+			background:#000000 ;
+			color: #ffffff;
+			border: 2px solid #000000;
+		}	
+		.btn.btn-secondare.btn-secondare--white{
+			
+			border: 2px solid #ffffff;
+			color: #ffffff;
+		
+		}
+		.btn.btn-first.btn-first--white{
+			background:#ffffff ;
+			color: #000000;
+			border: 2px solid #ffffff;
+		}	
+		.nav-logo{
+			font-family: 'Kaushan Script';
+			font-size: 36px;
+			letter-spacing: 0.9px;
+		}
+		.header{
+			background: url(image/fon1.png);
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		ul{
+			list-style: none;
+			padding: 0;
+		}
+		.nav{
+			display: flex;
+			justify-content: space-between;
+			color: #ffffff;
+			padding: 52px 0 47px;
+
+		}
+		.nav-menu{
+			display: flex;
+			max-width: 597px;
+			width: 100%;
+			justify-content: space-between;
+			font-size: 18px;
+			letter-spacing: 0.45px;
+		}
+		.nav-menu li a{
+			color: inherit;
+			text-decoration: none;
+			display: inline-block;
+			margin-bottom: 2px;
+			border-bottom: 2px solid transparent;
+			
+		}
+		.nav-menu li a:hover{
+			border-bottom: 2px solid #fdfcfc;
+			transition: border-bottom 0.3s ease;
+		}
+		.header-text{
+			color: #ffffff;
+			text-align: center;
+		}
+		.header-text h1{
+			font-size: 48px;
+			letter-spacing: 1.2px;
+			line-height: 60px;
+			font-weight: 600;
+
+		}
+		.header-text h1 span{
+			font-size: 40px;
+			letter-spacing: 1px;
+			font-weight: 400;
+		}
+		.header-text p{
+
+			font-size: 18px;
+			line-height: 36px;
+			letter-spacing: 0.45px;
+			opacity: 0.7;
+			margin-top: -6px;
+			margin-bottom: 33px;
+		}
+		.header-text-btn{
+			max-width: 350px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			margin: 0 auto;
+		}
+		.header-text-arrow a{
+			width: 40px; height: 21px;
+    		background: url('image/css_sprites.png') -595px -243px;
+			display: flex;
+			margin-top: 125px;	
+		}
+		.header-text-arrow{
+			margin-bottom: 128px;
+
+		}
+		.section-1{
+		background:url(image/fon2.png);
+		height: 646px;
+		}
+		.text-center{
+			text-align: center;
+		}
+		.section-1{
+			padding: 53px 0 44px 0;
+		}
+		.section-1 h2{
+			margin: -9px;
+			font-size: 32px;
+			font-weight: 700;
+			letter-spacing: 0.8px;
+			line-height: 36px;
+			color:#0f1417;
+		}
+		.section-1 p{
+			color: #0f1417;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 30px;
+			letter-spacing: 0.35px;
+			margin:27px 0 35px 0;
+		}
+		.wave-black{
+			width: 120px; height: 9px;
+    		background: url('image/css_sprites.png') -371px -650px;
+			margin: 0 auto;
+		}
+		.container-bread{
+			position: relative;
+			text-align: center;
+		}
+		.container-bread img{
+			max-width: 755px;
+			margin-top: -7px;
+		}
+		.container-bread ul{
+			text-align: left;
+			color: #0f1417;
+			font-size: 12px;
+			letter-spacing: 0.3px;
+			margin-top: 34px;
+			margin-top: 38px;
+		}
+		.l1{
+			width: 82px; height: 51px;
+    		background: url('image/css_sprites.png') -595px -10px;
+		}
+		.l2{
+			width: 90px; height: 41px;
+   			background: url('image/css_sprites.png') -697px -10px;
+		}
+		.l3{
+			width: 91px; height: 24px;
+    		background: url('image/css_sprites.png') -10px -650px;
+		}
+		.l4{
+			width: 89px; height: 40px;
+    		background: url('image/css_sprites.png') -697px -213px;
+		}
+		.bread-left span,
+		.bread-right span{
+			display: inline-block;
+		}
+		.container-bread{
+			max-width: 1083px;
+		}
+		.bread-left{
+			position: absolute;
+			max-width: 222px;
+			width: 100%;
+			left: 16px;
+		} 
+		.bread-left li{
+			position: relative;
+			display: flex;
+		}
+		.bread-left li span{
+			margin-left: 7px;
+		}
+		.bread-left li:first-child{
+			left: 28px;
+				}
+
+		</style>
+</head>
+<body>	
+	
+<header class="header">
+	<nav class="nav container">
+		<div class="nav-logo">
+			BakeryBo
+		</div>
+		<ul class="nav-menu">
+			<li><a href="">Home</a></li>
+			<li><a href="">About</a></li>
+			<li><a href="">Prices</a></li>
+			<li><a href="">Where to buy</a></li>
+			<li><a href="">Bakery</a></li>
+			<li><a href="">Contact</a></li>
+		</ul>
+	</nav>
+	<div class="header-text container">
+		<h1>New product line from BakeryBo®<br>
+			<span>Whole wheat bread for your health and fitness goals</span></h1>
+			<p>Gave up bread from your life to stay healthy and fit? <br>
+				What if we say now you can enjoy it daily and get only healthier?</p>
+		<div class="header-text-btn">
+			<a class="btn btn-secondare btn-secondare--white"	href="#">Where to buy</a>
+			<a class="btn btn-first btn-first--white"	href="#">Get a coupon</a>
+		</div>
+		<div class="btn arrow header-text-arrow ">
+			<a href="#"></a>
+		</div>
+	</div>
+</header>
+<main class="main">
+	<section class="section-1">
+		<div class="container">	
+			<h2 class="text-center">
+				What’s inside?
+			</h2>
+			<p class="text-center">We are 100% honest about how we bake our bread. <br>
+				BakeryBo bread is a rich source of various antioxidants, vitamins, minerals and fibers.<br>
+				There are no hidden ingredients that could harm your health or contradict your fitness goals in our recipes. 
+			</p>
+			<div class="wave-black"></div>
+		</div>
+		<div class="container container-bread">	
+			<ul class="bread-left">
+				<li >Whole wheat flour <span class="l1"></span></li>
+				<li>7 added grains <span class="l2"></span></li>
+				<li>Wheat bran <span class="l3"></span></li>
+				<li>Iodised salt <span class="l4"></span></li>
+			</ul>
+			<img src="image/baget_pic.png" alt="bread">
+			<ul class="bread-right">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</section>
+</main>
+<a class="btn btn-secondare btn-secondare--white"	href="#">Where to buy</a>
+	<a class="btn btn-first btn-first--white"	href="#">Get a coupon</a>
+</body>
+</html>
