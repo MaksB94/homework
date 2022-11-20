@@ -139,6 +139,7 @@
 		}
 		.section-1{
 		background:url(image/fon2.png);
+		
 		height: 646px;
 		}
 		.text-center{
@@ -181,8 +182,8 @@
 			color: #0f1417;
 			font-size: 12px;
 			letter-spacing: 0.3px;
-			margin-top: 34px;
-			margin-top: 38px;
+			margin-top: 30px;
+    		margin-left: 16px;
 		}
 		.l1{
 			width: 82px; height: 51px;
@@ -223,7 +224,58 @@
 		.bread-left li:first-child{
 			left: 28px;
 				}
-
+		.bread-left li:nth-child(2){
+        bottom: 2px;
+        margin-bottom: 24px;
+		}
+		.bread-left li:nth-child(3){
+			margin-left: 17px;
+			margin-bottom: 34px;
+		}
+		.bread-left li:nth-child(3) span{
+			bottom: 8px;
+			position: relative;
+		}
+		.bread-left li:nth-child(4){
+			margin-left: 18px;
+		}
+		.bread-left li:nth-child(4) span {
+			bottom: 25px;
+			position: relative;
+		}
+		.r1{
+			width: 81px; height: 51px;
+    		background: url('image/css_sprites.png') -595px -81px;
+		}
+		.r2{
+			width: 89px; height: 41px;
+    		background: url('image/css_sprites.png') -697px -71px;
+		}
+		.r3{
+			width: 90px; height: 23px;
+    		background: url('image/css_sprites.png') -121px -650px;
+		}
+		.r4{
+			width: 89px; height: 40px;
+    		background: url('image/css_sprites.png') -697px -273px;
+		}
+		.container-bread .bread-right{
+			font-size: 12px;
+			line-height: 36px;
+			letter-spacing: 0.3px;
+		}
+		.bread-right{
+			position: absolute;
+			max-width: 240px;
+			width: 100%;
+			right: 0;
+			top: 0;
+		}
+		.bread-right li{
+			position: relative;
+			display: flex;
+		}
+		
 		</style>
 </head>
 <body>	
@@ -277,10 +329,10 @@
 			</ul>
 			<img src="image/baget_pic.png" alt="bread">
 			<ul class="bread-right">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li><span class="r1"></span>No added white flour </li>
+				<li> <span class="r2"></span>No artificial flavors</li>
+				<li> <span class="r3"></span>No trans fat</li>
+				<li> <span class="r4"></span>No sugar</li>
 			</ul>
 		</div>
 	</section>
