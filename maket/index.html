@@ -120,7 +120,8 @@
 			margin-top: -6px;
 			margin-bottom: 33px;
 		}
-		.header-text-btn{
+		.header-text-btn,
+		.price-bread-buttoms{
 			max-width: 350px;
 			width: 100%;
 			display: flex;
@@ -348,11 +349,10 @@
 		.price-item{
 			width: 100%;
 			max-width: 160px;
-			height: 272px;
 			box-shadow: 0 6px 9px rgba(2, 6, 18, 0.04);
 			background-color: #ffffff;
-			padding: 19px 25px 38px 25px;
-			background: red;
+			padding: 19px 0 37px 0;
+			text-align: center;
 		
 		}
 		.price-item-text{
@@ -361,10 +361,10 @@
 			text-align: center;
 		}
 		.price-item img{
-			margin-bottom: 20px;
+			margin-bottom: 8px;
 		}
 		.price-item p{
-			margin-bottom: 18px;
+			margin-bottom: 8px;
 			line-height: 18px;
 			margin-top: 0;
 		}
@@ -375,7 +375,49 @@
 			font-size: 16px;
 			font-family: 'Open Sans', sans-serif;
 		}
-
+		.price-item p:last-child{
+			margin-bottom: 0;
+		}
+		.arrows-left{
+			width: 16px; height: 27px;
+    		background: url('image/css_sprites.png') -595px -377px;
+			left: 0;
+		}
+		.arrows-right{
+			width: 15px; height: 26px;
+    		background: url('image/css_sprites.png') -772px -561px;
+			right: 0;
+		}
+		.arrows{
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: calc(50% - 13px);
+			cursor: pointer;
+		}
+		.arrows-left,
+		.arrows-right{
+		position: absolute;
+		}
+		.price-bread-dots{
+			display: flex;
+			justify-content: space-between;
+			width: 30px;
+			margin: 42px auto 46px auto;
+		}
+		.price-bread-dots li{
+		width: 8px;
+		height: 8px;
+		background: #000000;
+		border-radius: 50%;
+		}
+		.price-bread-text{
+			text-align: center;
+			margin-top: 0;
+			margin-bottom: 43px;
+			line-height: 24px;
+			letter-spacing: 0.35px;
+		}
 		</style>
 </head>
 <body>	
@@ -518,6 +560,19 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<ul class="price-bread-dots">
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<p class="price-bread-text">
+			Haven’t tried BakeryBo whole wheat bread yet? <br>
+			Get a “Buy 1 get 1 free” coupon and receive 2 loaves for the price of 1.
+		</p>
+		<div class="price-bread-buttoms">
+			<a class="btn btn-secondare btn-secondare"	href="#">Where to buy</a>
+			<a class="btn btn-first btn-first"	href="#">Get a coupon</a>
 		</div>
 	</section>
 </main>
