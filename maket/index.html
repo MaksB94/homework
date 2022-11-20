@@ -139,8 +139,7 @@
 		}
 		.section-1{
 		background:url(image/fon2.png);
-		
-		height: 646px;
+		background-size: cover;
 		}
 		.text-center{
 			text-align: center;
@@ -178,6 +177,7 @@
 		.container-bread img{
 			max-width: 831px;
 			margin-top: -3px;
+			margin-bottom: -25px;
 		}
 		.container-bread .bread-left{
     		text-align: left;
@@ -325,6 +325,56 @@
     		background: url('image/css_sprites.png') -595px -202px;
 			margin: 0 auto;
 		}
+		.section-2-h2{
+			text-align: center;
+			font-size: 32px;
+			font-weight: 700;
+			line-height: 36px;
+			letter-spacing: 0.8px;
+			margin-top: 57px;
+		}
+		.price-bread{
+			position: relative;
+			max-width: 842px;
+			width: 100%;
+			margin: 0 auto;
+		}
+		.price-items{
+			display: flex;
+			justify-content: space-between;
+			max-width: 730px;
+			margin: 0 auto;
+		}
+		.price-item{
+			width: 100%;
+			max-width: 160px;
+			height: 272px;
+			box-shadow: 0 6px 9px rgba(2, 6, 18, 0.04);
+			background-color: #ffffff;
+			padding: 19px 25px 38px 25px;
+			background: red;
+		
+		}
+		.price-item-text{
+			max-width: 106px;
+			margin: 0 auto;
+			text-align: center;
+		}
+		.price-item img{
+			margin-bottom: 20px;
+		}
+		.price-item p{
+			margin-bottom: 18px;
+			line-height: 18px;
+			margin-top: 0;
+		}
+		.price-item p small{
+			font-size: 10px;
+		}
+		.price-item p b{
+			font-size: 16px;
+			font-family: 'Open Sans', sans-serif;
+		}
 
 		</style>
 </head>
@@ -387,6 +437,87 @@
 		</div>
 		<div class="arrow section-1-text-arrow ">
 			<a href="#"></a>
+		</div>
+	</section>
+	<section class="section-2">
+		<h2 class="section-2-h2">
+			Whole wheat bread line
+		</h2>
+		<div class="price-bread">
+			<div class="arrows">
+				<div class="arrows-left"></div>
+				<div class="arrows-right"></div>
+			</div>
+			<div class="price-items">
+				<div class="price-item">
+					<img src="image/sloy_3_1.png" alt="bread">
+					<div class="price-item-text">
+						<p>
+							Whole Wheat
+							Round
+						</p>
+						<p>							
+							<small>270 g | 218 kcal</small>	
+						</p>
+						<p>
+							<b>
+								$3.79
+							</b>
+						</p>
+					</div>
+				</div>
+				<div class="price-item">
+					<img src="image/sloy_3_2.png" alt="bread">
+					<div class="price-item-text">
+						<p>
+							Whole Wheat
+							Square
+						</p>
+						<p>							
+							<small>150 g | 211 kcal</small>	
+						</p>
+						<p>
+							<b>
+								$2.19
+							</b>
+						</p>
+					</div>
+				</div>
+				<div class="price-item">
+					<img src="image/sloy_3_3.png" alt="bread">
+					<div class="price-item-text">
+						<p>
+							Whole Wheat
+							Multigrain
+						</p>
+						<p>							
+							<small>270 g | 242 kcal</small>	
+						</p>
+						<p>
+							<b>
+								$4.19
+							</b>
+						</p>
+					</div>
+				</div>
+				<div class="price-item">
+					<img src="image/sloy_3_4.png" alt="bread">
+					<div class="price-item-text">
+						<p>
+							Breakfast Raisin
+							Square
+						</p>
+						<p>							
+							<small>180 g | 239 kcal</small>	
+						</p>
+						<p>
+							<b>
+								$3.79
+							</b>
+						</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 </main>
