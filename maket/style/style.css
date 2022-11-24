@@ -864,6 +864,7 @@ ul {
 .footer {
 	background: url(../image/footer.png) no-repeat;
 	color: #FFFFFF;
+	background-size: cover;
 }
 
 .footer .container {
